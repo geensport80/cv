@@ -1,0 +1,14 @@
+---
+description: มาตรฐาน WordPress Theme และ PHP
+globs: ["**/*.php"]
+alwaysApply: false
+---
+
+# WordPress / PHP
+
+- ไฟล์ template (markup) Cursor แก้ได้ ส่วน `functions.php`, hooks, custom query, REST endpoint เป็นงานของ Claude Code
+- Escape output ทุกจุด: `esc_html()`, `esc_attr()`, `esc_url()`, `wp_kses_post()`
+- Sanitize input: `sanitize_text_field()`, `absint()` และตรวจ Nonce กับ `current_user_can()`
+- Query ใช้ `$wpdb->prepare()` เสมอ
+- Enqueue CSS/JS ผ่าน `wp_enqueue_style()` / `wp_enqueue_script()` ไม่ใส่ `<link>` ตรง
+- ข้อความที่แสดงผลห่อด้วย `__()` / `esc_html__()` พร้อม text domain

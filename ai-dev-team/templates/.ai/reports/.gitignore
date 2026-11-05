@@ -1,0 +1,3 @@
+# ไฟล์ Log ของ run-checks.sh ไม่ต้อง Commit
+last-failure.log
+last-run.log

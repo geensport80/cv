@@ -1,0 +1,14 @@
+---
+description: มาตรฐาน Frontend, CSS และ Responsive
+globs: ["**/*.css", "**/*.scss", "**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx", "**/*.html"]
+alwaysApply: false
+---
+
+# Frontend
+
+- Mobile-first: เขียนสไตล์มือถือก่อน แล้วขยายด้วย `@media (min-width: ...)`
+- Breakpoint มาตรฐาน: 640px, 768px, 1024px, 1280px
+- ใช้ CSS Custom Properties สำหรับสีและระยะ ไม่ Hard-code สีซ้ำหลายที่
+- Accessibility: ทุก `<img>` มี `alt`, ปุ่มกดใช้ `<button>`, Contrast อย่างน้อย 4.5:1, ใช้ Keyboard ได้
+- ไม่เพิ่ม Library ใหม่โดยไม่ระบุเหตุผลใน TASK file
+- ตรวจการแสดงผลภาษาไทย (ฟอนต์, การตัดคำ, line-height อย่างน้อย 1.6)
