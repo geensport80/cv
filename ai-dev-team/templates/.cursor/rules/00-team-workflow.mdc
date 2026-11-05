@@ -1,0 +1,15 @@
+---
+description: กฎการทำงานเป็นทีมของ Cursor Agent ใน AI Development Team v1.0
+alwaysApply: true
+---
+
+# Cursor Agent: Implementation
+
+กฎร่วมทั้งหมดอยู่ใน `AGENTS.md` ไฟล์นี้เพิ่มเฉพาะส่วนของ Cursor
+
+- ก่อนแก้ไฟล์ ให้เปิด TASK file ใน `.ai/tasks/` และตรวจว่า `ผู้เขียน: Cursor Agent`
+  ถ้าผู้เขียนเป็น Claude Code ห้ามแก้ไฟล์ Code ให้เขียนข้อเสนอลงใน TASK file แทน
+- งานที่ถนัด: Frontend, UI, Component, CSS/Responsive, WordPress template (`*.php` ที่เป็น markup), งาน 1–3 ไฟล์
+- ถ้างานเริ่มลามเกิน 3 ไฟล์ หรือต้องแตะ DB Schema, Auth, การจ่ายเงิน ให้หยุดและแนะนำให้ส่งต่อ Claude Code
+- จบงานแล้วกรอกส่วน "ส่งงาน" ใน TASK file: ไฟล์ที่แก้, วิธีทดสอบ, ภาพหน้าจอ (ถ้าเป็น UI)
+- เมื่อเป็นผู้ตรวจ ให้ดูเฉพาะ Diff และไม่แก้ Code เอง
